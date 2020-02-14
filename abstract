@@ -1,0 +1,7 @@
+Monitoring a student while they are in a video conferencing classroom is a non-intrusive approach to digitizing studentss behaviour. Understanding students’ attention span and what type of behaviours may indicate a lack of attention is fundamental for understanding and consequently improving the
+dynamics of a lecture. The main goal of this project is to develope an autonomous agent able to provide information to both teachers and
+students. Student engagement is positively linked to desirable academic outcomes, such as critical thinking, and grades obtained in the subject.
+Camere Self-Calibration: Since the environment of each student is not uniform, it induces different image intensities, therefore the camera needs to be calibrated to capture analyzable and uniform images.
+Features and Pose Extraction: One immediate feature that comes to mind is eye tracking but eye tracking tends to suffer from low resolution images. Hence we use head position which tends to contribute highly in the overall gaze direction.
+Although head position already is highly accurate in attention detection, paired with another technique vastly improves the results. 
+Students that are paying attention normally react to stimulus the same way, that is students having their motions synchronised to the majority are paying attention. An example of this synchronization is when the class has to bend down to write when the teachers instructs them to.
