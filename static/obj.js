@@ -4,8 +4,24 @@ const uploadWidth = 450;
 window.onbeforeunload = function () {
   return "Data will be lost if you leave the page, are you sure?";
 };
+
+var person;
+async function start() {
+  try {
+    let p1 = await Swal.fire({
+      input: 'text',
+      inputPlaceholder: 'Name'
+    });
+    return p1;
+  } catch (e) {
+    console.log("errr");
+  }
+}
+
+person = start();
+console.log(person)
 var room = document.getElementById("conference-name").value;
-var person = prompt("Please Enter your name");
+// var person = prompt("Please Enter your name");
 localStorage.setItem("$person$$$", person);
 console.log(localStorage.getItem("$person$$$"));
 const apiServer = "http://localhost:5000" + "/image";
