@@ -1,25 +1,19 @@
-const sourceVideo = document.getElementById("myVideo");
+
+var person;
+Swal.fire({
+    input: 'text',
+    inputPlaceholder: 'Name',
+}).then(function (res) {
+  if (res)
+  {
+    const sourceVideo = document.getElementById("myVideo");
 end = 0;
 const uploadWidth = 450;
 window.onbeforeunload = function () {
   return "Data will be lost if you leave the page, are you sure?";
 };
 
-var person;
-async function start() {
-  try {
-    let p1 = await Swal.fire({
-      input: 'text',
-      inputPlaceholder: 'Name'
-    });
-    return p1;
-  } catch (e) {
-    console.log("errr");
-  }
-}
-
-person = start();
-console.log(person)
+    person = res.value;console.log(person)
 var room = document.getElementById("conference-name").value;
 // var person = prompt("Please Enter your name");
 localStorage.setItem("$person$$$", person);
@@ -290,6 +284,9 @@ v.onloadedmetadata = () => {
   gotMetadata = true;
   if (isPlaying) startObjectDetection();
 };
+    console.log(isPlaying);
+    console.log(gotMetadata);
+    startObjectDetection();
 v.onplaying = () => {
   console.log("video playing");
   isPlaying = true;
@@ -297,3 +294,8 @@ v.onplaying = () => {
     startObjectDetection();
   }
 };
+
+    console.log("Confirmed");
+      }
+  })
+//person = prompt("Enter your name here");
