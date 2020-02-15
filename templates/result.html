@@ -4,15 +4,28 @@
   <head>
   <link rel="stylesheet" href="static/css/res.css">
     <link rel="stylesheet" href="static/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
      <script src="static/jquery.slim.min.js"></script>
     <script src="static/bootstrap.min.js"></script>
     <script src="static/popper.min.js"></script>
+
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Your Result</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body style="background-color: lavender;">
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
     <div class="row">
       <div class="col-lg-6 col-sm-4">
         <canvas id="myPieChart1"></canvas>
@@ -25,7 +38,8 @@
     </div>
     <script src="static/chart.js"></script>
     <script src="static/res.js"></script>
-
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 
 </html>

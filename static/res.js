@@ -1,3 +1,13 @@
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+
 var ctx = document.getElementById('myPieChart1').getContext('2d');
 var ctx1 = document.getElementById('myPieChart2').getContext('2d');
 var ctx2 = document.getElementById('myPieChart3').getContext('2d');
@@ -48,7 +58,7 @@ var chart = new Chart(ctx, {
         ]
     },
     options: {
-        animation: {
+        animation:{
             easing: 'easeInCirc',
             duration: 2200
         }
@@ -65,7 +75,7 @@ var chart1 = new Chart(ctx1, {
         ]
     },
     options: {
-        animation: {
+        animation:{
             easing: 'easeInCirc',
             duration: 2200
         }
@@ -82,7 +92,7 @@ var chart2 = new Chart(ctx2, {
         ]
     },
     options: {
-        animation: {
+        animation:{
             easing: 'easeInCirc',
             duration: 2200
         }
@@ -99,7 +109,7 @@ var chart3 = new Chart(ctx3, {
         ]
     },
     options: {
-        animation: {
+        animation:{
             easing: 'easeInCirc',
             duration: 2200
         }
