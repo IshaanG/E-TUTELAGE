@@ -1,4 +1,4 @@
-# hack36-hackoholics
+# Hack36-HackO'holics
 
 # Project Title
 
@@ -14,19 +14,22 @@ This project can revolutionalize education by providing guidance and feedback no
 
 ## Getting Started
 
-In these instructions, we will explain how to get a copy of the project up and running on any local machine for development and testing purposes.
+```
+git clone https://github.com/IshaanG/hack36-hackoholics.git
+cd hack36-hackoholics
+python server.py &
+cd api_server
+python serverf.py &
+```
+Thats it now you can see the website running at http://localhost:5500
 
 ### Prerequisites
 
-Here, we will inform what things anyone would need to install the software and how to install them.
-
+Just run
 ```
-And would also give examples.
+python requirements.txt
 ```
-
-### Installing
-
-We will be providing a step by step series of examples that would tell how to get a development environment running.
+and you are ready for using our project
 
 
 ## Running the tests
