@@ -226,6 +226,10 @@ video {
   display: none;
   background-color: green;
   color: white;
+  position: relative;
+  float: right;
+  right: 38%;
+  top: 100px;
 }
 
 #close:hover {
