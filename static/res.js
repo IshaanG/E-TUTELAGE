@@ -7,7 +7,7 @@ let userdata;
 let username;
 let userroom;
 xhr = new XMLHttpRequest();
-xhr.open("GET", "http://localhost:5500/getdata", true)
+xhr.open("GET", "http://35.209.156.191:5500/getdata", true)
 xhr.responseType = "json";
 xhr.send();
 xhr.onload = function () {
@@ -27,8 +27,8 @@ xhr.onload = function () {
         chart2.update();
         chart3.update();
         var z = document.getElementById("mydata");
-        time=userdata['class&']['ClassEndTime']-userdata['class&']['ClassStartTime']
-        z.innerHTML = "<li>Lecture Time "+time/60.0+" minutes</li>"
+        time = userdata['class&']['ClassEndTime'] - userdata['class&']['ClassStartTime']
+        z.innerHTML = "<li>Lecture Time " + time / 60.0 + " minutes</li>"
     }
 }
 

@@ -44,7 +44,7 @@ var config = {
 
         var tr = document.createElement('tr');
         tr.setAttribute('id', room.broadcaster);
-        tr.innerHTML = '<td><button class="join" id="' + room.roomToken + '">'+room.roomName+'</button></td>';
+        tr.innerHTML = '<td><button class="join" id="' + room.roomToken + '">' + room.roomName + '</button></td>';
         roomsList.insertBefore(tr, roomsList.firstChild);
 
         tr.onclick = function () {
@@ -124,8 +124,7 @@ function hideUnnecessaryStuff() {
     if (teacher == false) {
         document.getElementById('livestatus').style.display = "block";
     }
-    else
-    {
+    else {
         document.getElementById('close').style.display = "block";
     }
     document.getElementById('participants').style.display = "block";

@@ -1,8 +1,8 @@
 
 var person;
 Swal.fire({
-    input: 'text',
-    inputPlaceholder: 'Enter your name here',
+  input: 'text',
+  inputPlaceholder: 'Enter your name here',
 }).then(function (res) {
   if (res) {
     const sourceVideo = document.getElementById("myVideo");
@@ -17,7 +17,7 @@ Swal.fire({
     // var person = prompt("Please Enter your name");
     localStorage.setItem("$person$$$", person);
     console.log(localStorage.getItem("$person$$$"));
-    const apiServer = "http://localhost:5000" + "/image";
+    const apiServer = "http://35.209.156.191:5000" + "/image";
     v = sourceVideo;
     console.log(v);
     let isPlaying = false,
@@ -235,7 +235,7 @@ Swal.fire({
             }
             else {
               let xhr = new XMLHttpRequest();
-              xhr.open("POST", "http://localhost:5500/result", true);
+              xhr.open("POST", "http://35.209.156.191:5500/result", true);
               let formdata = new FormData();
               formdata.append("name", person);
               formdata.append("room", room);
@@ -247,7 +247,7 @@ Swal.fire({
                 console.log(this.status);
                 if (this.status == 200) {
                   console.log("working");
-                  window.location.href = "http://localhost:5500/new"
+                  window.location.href = "http://35.209.156.191:5500/new"
                 }
               }
               console.log("Session Ended by Teacher");
