@@ -1,3 +1,13 @@
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+
 var ctx = document.getElementById('myPieChart1').getContext('2d');
 var ctx1 = document.getElementById('myPieChart2').getContext('2d');
 var ctx2 = document.getElementById('myPieChart3').getContext('2d');
@@ -35,15 +45,15 @@ xhr.onload = function () {
 var chart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ['Drowing', 'Not Drowing'],
+        labels: ['Feeling Drowsy', 'Not drowsy'],
         datasets: [{
             backgroundColor: ['rgb(105, 99, 132)', 'rgb(255,0,0)'],
-            data: [10, 90]
+            data: [50, 50]
         }
         ]
     },
     options: {
-        animation: {
+        animation:{
             easing: 'easeInCirc',
             duration: 2200
         }
@@ -55,12 +65,12 @@ var chart1 = new Chart(ctx1, {
         labels: ['Yawning', 'Not Yawning'],
         datasets: [{
             backgroundColor: ['rgb(255, 99, 132)', 'rgb(0,0,0)'],
-            data: [10, 90]
+            data: [50, 50]
         }
         ]
     },
     options: {
-        animation: {
+        animation:{
             easing: 'easeInCirc',
             duration: 2200
         }
@@ -72,12 +82,12 @@ var chart2 = new Chart(ctx2, {
         labels: ['Not Looking at Screen', 'Looking at Screen'],
         datasets: [{
             backgroundColor: ['rgb(90, 99, 90)', 'rgb(10,50,80)'],
-            data: [10, 90]
+            data: [50, 50]
         }
         ]
     },
     options: {
-        animation: {
+        animation:{
             easing: 'easeInCirc',
             duration: 2200
         }
@@ -89,12 +99,12 @@ var chart3 = new Chart(ctx3, {
         labels: ['Not Active on tab', 'Active on Tab'],
         datasets: [{
             backgroundColor: ['rgb(80, 80, 132)', 'rgb(0,160,160)'],
-            data: [10, 90]
+            data: [50, 50]
         }
         ]
     },
     options: {
-        animation: {
+        animation:{
             easing: 'easeInCirc',
             duration: 2200
         }
