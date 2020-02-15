@@ -23,7 +23,13 @@ xhr.onload = function () {
         // console.log(userdata);
         // console.log(username);
         // console.log(userroom);
+<<<<<<< HEAD
         console.log(userdata['class&']);
+=======
+        console.log(userdata['class&']['ClassEndTime']);
+        console.log(userdata['class&']['ClassEndTime']);
+
+>>>>>>> df48f44b7ecef250aa35f0bcf7a3b4346a7f711d
         chart.data.datasets[0].data = [userdata[username]['avgdrow'] * 100, 100 - userdata[username]['avgdrow'] * 100]
         chart1.data.datasets[0].data = [userdata[username]['avgyawn'] * 100, 100 - userdata[username]['avgyawn'] * 100]
         chart2.data.datasets[0].data = [userdata[username]['avgpos'] * 100, 100 - userdata[username]['avgpos'] * 100]
