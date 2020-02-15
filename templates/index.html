@@ -1,60 +1,66 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html id="home" lang="en">
 
-<head>
-    <link rel="stylesheet" href="static/css/main.css">
-    <script>
-        if (!location.hash.replace('#', '').length) {
-            location.href = location.href.split('#')[0] + '#' + (18 * 100).toString().replace('.', '');
-            location.reload();
-        }
-    </script>
+    <head>
+        <link rel="stylesheet" href="static/css/main.css">
+        <script>
+            if (!location.hash.replace('#', '').length) {
+                location.href = location.href.split('#')[0] + '#' + (18 * 100).toString().replace('.', '');
+                location.reload();
+            }
+        </script>
 
-    <title>Hack 36</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-</head>
+        <title>Hack 36</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    </head>
 
-<body>
-    <article>
-        <table class="visible">
-            <tr>
-                <td style="text-align: right;">
-                    <input type="text" id="conference-name" placeholder="Broadcast Name">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button id="start-conferencing" class="btn draw-border">New Broadcast</button>
-                </td>
-            </tr>
-        </table>
-        <table id="rooms-list" class="visible"></table>
-
-
-        <div id="participants"></div>
-        <div id="students">
-            <div></div>
-        </div>
-        <canvas id="myChart"></canvas>
-        <div id="livestatus">
-        </div>
-        <button id="close">Close</button>
-
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-        <script src="static/adapter-latest.js"></script>
-        <script src="static/socket.io.js"> </script>
-        <script src="static/RTCPeerConnection-v1.5.js"> </script>
-        <script src="static/broadcast.js"> </script>
-        <script src="static/broadcast-ui.js"> </script>
-        <script src="static/file.js"> </script>
+    <body>
+        <article>
+            <table class="visible">
+                <tr>
+                    <td style="text-align: right;">
+                        <input type="text" id="conference-name" placeholder="Broadcast Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="start-conferencing" class="btn draw-border">New Broadcast</button>
+                    </td>
+                </tr>
+            </table>
+            <table id="rooms-list-head" class="visible">
+                <tr>
+                    <span style="border-width: 0px;">  </span>
+                    <th>Join these Rooms:</th>
+                </tr>
+            </table>
+            <table id="rooms-list" class="visible"></table>
 
 
-    </article>
+            <div id="participants"></div>
+            <div id="students">
+                <div></div>
+            </div>
+            <canvas id="myChart"></canvas>
+            <div id="livestatus">
+            </div>
+            <button id="close">Close</button>
 
-</body>
+            <script src="static/chart.js"></script>
+            <script src="static/jquery.slim.min.js"></script>
+            <script src="static/adapter-latest.js"></script>
+            <script src="static/socket.io.js"> </script>
+            <script src="static/RTCPeerConnection-v1.5.js"> </script>
+            <script src="static/broadcast.js"> </script>
+            <script src="static/broadcast-ui.js"> </script>
+            <script src="static/file.js"> </script>
+
+
+        </article>
+
+    </body>
 
 </html>
