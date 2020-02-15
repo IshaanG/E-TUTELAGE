@@ -11,18 +11,19 @@ xhr.open("GET", "http://localhost:5500/getdata", true)
 xhr.responseType = "json";
 xhr.send();
 xhr.onload = function () {
-    console.log(this.status);
+    // console.log(this.status);
     if (this.status == 200) {
         // console.log(this.response);
         userdata = this.response['data'];
         userdata = JSON.parse(userdata);
-        console.log(typeof (userdata));
+        // console.log(typeof (userdata));
         username = localStorage.getItem("$person$$$");
-        console.log(username)
+        // console.log(username)
         userroom = this.response['room'];
-        console.log(userdata);
-        console.log(username);
-        console.log(userroom);
+        // console.log(userdata);
+        // console.log(username);
+        // console.log(userroom);
+        console.log(userdata['class&']['ClassEndTime']);
         chart.data.datasets[0].data = [userdata[username]['avgdrow'] * 100, 100 - userdata[username]['avgdrow'] * 100]
         chart1.data.datasets[0].data = [userdata[username]['avgyawn'] * 100, 100 - userdata[username]['avgyawn'] * 100]
         chart2.data.datasets[0].data = [userdata[username]['avgpos'] * 100, 100 - userdata[username]['avgpos'] * 100]
