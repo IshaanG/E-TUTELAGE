@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tech</title>
+    <script src="/static/adapter-latest.js"></script>
+</head>
+<style>
+    video {
+        position: static;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+    }
+
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1
+    }
+</style>
+
+<body>
+    YAWNING: 
+    <div id="yawn">1</div>
+    DROWSY:
+    <div id="drow">1</div>
+    HEAD POSITION:
+    <div id="pos">1</div>
+
+    <video id="myVideo" autoplay></video>
+    <script src="/static/local.js"></script>
+    <script id="objDetect" src="/static/objDetect.js" data-source="myVideo" data-mirror="true" data-uploadWidth="1280"
+        data-scoreThreshold="0.25"></script>
+
+</body>
+
+</html>
