@@ -1,8 +1,8 @@
 
 var person;
 Swal.fire({
-  input: 'text',
-  inputPlaceholder: 'Name',
+    input: 'text',
+    inputPlaceholder: 'Enter your name here',
 }).then(function (res) {
   if (res) {
     const sourceVideo = document.getElementById("myVideo");
