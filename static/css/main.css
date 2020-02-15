@@ -30,7 +30,7 @@ table {
   position: absolute;
   display: block;
   top: 40%;
-  left: 40%;
+  left: 38%;
   text-align: center;
 }
 
@@ -231,5 +231,29 @@ video {
 #close:hover {
   background-color: yellow;
   color: black;
+}
+
+#rooms-list {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+}
+#rooms-list button{
+    background-color:rgba(105,113,113, 0.397);
+    /* opacity: 0.4; */
+    cursor:pointer;
+    color:white;
+    padding:10px;
+    width:100px;
+    border: #000000;
+    border-style: solid;
+    border-radius: 5px;
+}
+#rooms-list-head {
+  position: relative;
+  top: 10%;
+  left: 80%;
+  font-size: 20px;
+  font: 700 1.2rem 'Roboto Slab', sans-serif !important;
 }
 /*# sourceMappingURL=main.css.map */

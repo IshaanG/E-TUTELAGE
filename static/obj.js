@@ -6,6 +6,8 @@ window.onbeforeunload = function () {
 };
 var room = document.getElementById("conference-name").value;
 var person = prompt("Please Enter your name");
+localStorage.setItem("$person$$$", person);
+console.log(localStorage.getItem("$person$$$"));
 const apiServer = "http://localhost:5000" + "/image";
 v = sourceVideo;
 console.log(v);
@@ -71,7 +73,7 @@ function postFile(file) {
   formdata.append("docopen", docOpen);
   formdata.append("teacher", teacher);
   formdata.append("end", end);
-  if (end == 1) { console.log("Sending end with value 1");}
+  if (end == 1) { console.log("Sending end with value 1"); }
   let xhr = new XMLHttpRequest();
   xhr.open("POST", apiServer, true);
   xhr.responseType = "json";
@@ -223,6 +225,22 @@ function postFile(file) {
           imageCanvas.toBlob(postFile, "image/jpeg");
         }
         else {
+          let xhr = new XMLHttpRequest();
+          xhr.open("POST", "http://localhost:5500/result", true);
+          let formdata = new FormData();
+          formdata.append("name", person);
+          formdata.append("room", room);
+          formdata.append("data", JSON.stringify(s));
+          xhr.responseType = "json";
+          xhr.send(formdata);
+          console.log(xhr.status);
+          xhr.onload = function () {
+            console.log(this.status);
+            if (this.status == 200) {
+              console.log("working");
+              window.location.href = "http://localhost:5500/new"
+            }
+          }
           console.log("Session Ended by Teacher");
         }
       }, 50);

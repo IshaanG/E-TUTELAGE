@@ -44,8 +44,7 @@ var config = {
 
         var tr = document.createElement('tr');
         tr.setAttribute('id', room.broadcaster);
-        tr.innerHTML = '<td>' + room.roomName + '</td>' +
-            '<td><button class="join" id="' + room.roomToken + '">Join Room</button></td>';
+        tr.innerHTML = '<td><button class="join" id="' + room.roomToken + '">'+room.roomName+'</button></td>';
         roomsList.insertBefore(tr, roomsList.firstChild);
 
         tr.onclick = function () {
