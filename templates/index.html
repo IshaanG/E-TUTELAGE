@@ -2,11 +2,12 @@
 <html id="home" lang="en">
 
 <head>
+    <link rel="stylesheet" href="static/css/main.css">
     <script>
         if (!location.hash.replace('#', '').length) {
             location.href = location.href.split('#')[0] + '#' + (18 * 100).toString().replace('.', '');
             location.reload();
-        } 3
+        }
     </script>
 
     <title>Hack 36</title>
@@ -40,7 +41,17 @@
         <canvas id="myChart"></canvas>
         <div id="livestatus">
         </div>
-        <button id="close"></button>
+        <button id="close">Close</button>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script src="static/adapter-latest.js"></script>
+        <script src="static/socket.io.js"> </script>
+        <script src="static/RTCPeerConnection-v1.5.js"> </script>
+        <script src="static/broadcast.js"> </script>
+        <script src="static/broadcast-ui.js"> </script>
+        <script src="static/file.js"> </script>
+
 
     </article>
 
