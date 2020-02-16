@@ -63,3 +63,8 @@ We will be adding additional notes about how to deploy this on a live system.
 ## Acknowledgments
 
 * We would like to thank each and everyone, who had even the smallest of contributions to our project.
+
+## Snapshots of our Project
+
+![After Project results and analysis](./Screenshot_20200216_084640.png)
+![Feedback during lecture](./vlcsnap-2020-02-16-08h57m31s916.png)
