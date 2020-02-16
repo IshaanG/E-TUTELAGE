@@ -63,3 +63,7 @@ We will be adding additional notes about how to deploy this on a live system.
 ## Acknowledgments
 
 * We would like to thank each and everyone, who had even the smallest of contributions to our project.
+
+## Snapshots of our Project
+
+![After Project results and analysis](https://drive.google.com/open?id=1x2cEZ66w1KQqlCXskL-5u77Evm84BBWZ)
