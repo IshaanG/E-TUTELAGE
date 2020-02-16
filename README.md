@@ -66,4 +66,5 @@ We will be adding additional notes about how to deploy this on a live system.
 
 ## Snapshots of our Project
 
-![After Project results and analysis](https://drive.google.com/open?id=1x2cEZ66w1KQqlCXskL-5u77Evm84BBWZ)
+![After Project results and analysis](./Screenshot_20200216_084640.png)
+![Feedback during lecture](./vlcsnap-2020-02-16-08h57m31s916.png)
