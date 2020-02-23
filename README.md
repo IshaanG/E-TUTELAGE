@@ -27,7 +27,7 @@ Thats it now you can see the website running at http://localhost:5500
 
 Just run
 ```
-python requirements.txt
+pip install -r requirements.txt
 ```
 and you are ready for using our project
 
