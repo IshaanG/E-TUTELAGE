@@ -1,0 +1,12 @@
+Click==7.0
+dlib==19.19.0
+Flask==1.1.1
+imutils==0.5.3
+itsdangerous==1.1.0
+Jinja2==2.11.1
+MarkupSafe==1.1.1
+numpy==1.18.1
+opencv-python==4.2.0.32
+Pillow==7.0.0
+scipy==1.4.1
+Werkzeug==1.0.0
