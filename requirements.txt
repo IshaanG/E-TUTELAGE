@@ -9,4 +9,4 @@ numpy==1.18.1
 opencv-python==4.2.0.32
 Pillow==7.0.0
 scipy==1.4.1
-Werkzeug==1.0.0
+Werkzeug==2.2.3
