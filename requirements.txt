@@ -1,6 +1,6 @@
 Click==7.0
 dlib==19.19.0
-Flask==1.1.1
+Flask==2.3.2
 imutils==0.5.3
 itsdangerous==1.1.0
 Jinja2==2.11.1
